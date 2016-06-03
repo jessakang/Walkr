@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h2>Dog Walkers</h2>
+
+  <body>
+    <div class="walkers">
+    <% @walkers.each do |walker| %>
+      <tr>
+        <h3><%= walker.name %></h3>
+        <%= image_tag walker.image, :class => 'feature' %>
+        <p>
+        <td>Email: <%= walker.email %></td>
+        <p>
+        <td>Experience (yrs): <%= walker.experience %></td>
+        <p>
+        <td>Located: <%= walker.suburbs %></td>
+        <p>
+        <td>Has Car: <%= walker.car %></td>
+        <p>
+        <td>Wage/hr: <%= walker.wage %></td>
+        <p>
+      </tr>
+    <% end %>
+  </div>
+  </body>

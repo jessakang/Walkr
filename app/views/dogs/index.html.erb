@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h2>All Dogs</h2>
+
+  <body>
+    <div class="dogs">
+    <% @dogs.each do |dog| %>
+      <tr>
+        <h3><%= dog.name %></h3>
+        <%= image_tag dog.image, :class => 'feature' %>
+        <p>
+        <td>Breed: <%= dog.breed %></td>
+        <p>
+        <td>Located: <%= dog.suburb %></td>
+        <p>
+        <td>Concerns: <%= dog.concerns %></td>
+        <p>
+        <td>Owner: <%= link_to dog.owner.name, dog.owner %></td>
+        <p>
+        <p>
+      </tr>
+    <% end %>
+  </div>
+  </body>
+
+<%= link_to 'New Dog', new_dog_path %>

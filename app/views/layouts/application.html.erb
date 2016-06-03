@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WALKR</title>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
+        <nav>
+            <div class="navigation">
+                <ul>
+                    <% if @current_user %>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li><%= link_to "Your Profile", @current_user %></li>
+                    <li>
+                        <a href="/dogs">Dogs</a>
+                    </li>
+                    <li>
+                        <a href="/walkers">Walkers</a>
+                    </li>
+                    <% if @current_user.is_a? Owner %>
+                    <li>
+                        <a href="/dogs/new">Add Dog</a>
+                    </li>
+                    <li>
+                        <a href="/comments/new">Create A Comment</a>
+                    </li>
+                    <% end %>
+                    <li>
+                        <a href="/logout">Logout</a>
+                    </li>
+                <% else %>
+                    <% end %>
+                    <div class="sign_in">
+                        <% if @current_user %>
+                        Signed in as
+                        <%= @current_user.email %>
+                        <% end %>
+                    </div>
+                </ul>
+            </div>
+            <div class="bottom_nav">
+                <% if flash[:success] %>
+                <p><%= flash[:success] %></p>
+                <% end %>
+            </div>
+        </nav>
+
+        <%= yield %>
+
+    </body>
+</html>

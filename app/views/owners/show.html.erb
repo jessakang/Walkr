@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<div class="owners">
+    <h2><%= @owner.name %></h2>
+    <%= image_tag @owner.image, :class => 'feature' %>
+    <p>
+        <strong>Email: </strong>
+        <%= @owner.email %>
+    </p>
+
+    <%= link_to 'Edit', edit_owner_path(@owner) %>
+    |
+    <%= link_to 'Back', owners_path %>
+    |
+    <%= link_to 'Destroy', @owner, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>

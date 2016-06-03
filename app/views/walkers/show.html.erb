@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+<div class="walkers">
+    <h2><%= @walker.name %></h2>
+    <%= image_tag @walker.image, :class => 'feature' %>
+
+    <p>
+        <strong>Email:</strong>
+        <%= @walker.email %>
+    </p>
+
+    <p>
+        <strong>Experience:</strong>
+        <%= @walker.experience %>
+    </p>
+
+    <p>
+        <strong>Located:</strong>
+        <%= @walker.suburbs %>
+    </p>
+
+    <p>
+        <strong>Car:</strong>
+        <%= @walker.car %>
+    </p>
+
+    <p>
+        <strong>Wage:</strong>
+        <%= @walker.wage %>
+    </p>
+
+    <p>
+        <strong>Comments:</strong>
+        <% @walker.comments.each do |comment| %>
+        <p></p><%= link_to comment.message, comment %>
+        <% end %>
+    </p>
+
+    <%= link_to 'Edit', edit_walker_path(@walker) %>
+    |
+    <%= link_to 'Back', walkers_path %>
+    |
+    <%= link_to 'Destroy', @walker, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>

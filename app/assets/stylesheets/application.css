@@ -1,0 +1,117 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  background: url("dog_background.jpeg");
+  background-size: cover;
+}
+
+h1 {
+  padding-top: 0px;
+  text-align: left;
+  font-size: 60px;
+  padding-left: 15px;
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: gainsboro;
+    opacity: 0.5;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: lighter;
+    display: block;
+    color: black;
+    padding: 10px;
+    background-color: gainsboro;
+}
+
+li a:hover {
+  background-color: #767779;
+}
+
+.category a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: lighter;
+  padding: 5px;
+}
+
+.category a:hover {
+  opacity: 0.8;
+  border:1px solid white;
+}
+
+.walkers a {
+  color: white;
+}
+
+.walkers a:hover {
+  color: red;
+}
+
+.owners a {
+  color: white;
+}
+
+.owners a:hover {
+  color: red;
+}
+
+.dogs a {
+  color: white;
+}
+
+.dogs a:hover {
+  color: red;
+}
+
+.comments a {
+  color: white;
+}
+
+.comments a:hover {
+  color: red;
+}
+
+
+.navigation {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+}
+
+.sign_in {
+  color: black;
+  font-size: 15px;
+  float: right;
+  padding-right: 20px;
+  font-weight: lighter;
+}

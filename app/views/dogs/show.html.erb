@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<div class="dogs">
+    <h2><%= @dog.name %></h2>
+    <%= image_tag @dog.image, :class => 'feature' %>
+    <p>
+        <strong>Breed:</strong>
+        <%= @dog.breed %>
+    </p>
+
+    <p>
+        <strong>Weight (kgs):</strong>
+        <%= @dog.weight %>
+    </p>
+
+    <p>
+        <strong>Suburb:</strong>
+        <%= @dog.suburb %>
+    </p>
+
+    <p>
+        <strong>Concerns:</strong>
+        <%= @dog.concerns %>
+    </p>
+
+    <strong>Owner:</strong>
+    <%= link_to @dog.owner.name, @dog.owner %>
+    <p>
+    <%= link_to 'Edit', edit_dog_path(@dog) %>
+    |
+    <%= link_to 'Back', dogs_path %>
+</div>

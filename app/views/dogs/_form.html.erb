@@ -1,0 +1,42 @@
+<%= form_for @dog, :html => { :multipart => true } do |f| %>
+<% if @dog.errors.any? %>
+<div id="error_explanation">
+    <h2><%= pluralize(@dog.errors.count, "error") %>
+        prohibited this dog from being saved:</h2>
+
+    <ul>
+        <% @dog.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+    </ul>
+</div>
+<% end %>
+
+<div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_area :name %>
+</div>
+<div class="field">
+    <%= f.label :breed %><br>
+    <%= f.text_area :breed %>
+</div>
+<div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_area :weight %>
+</div>
+<div class="field">
+    <%= f.label :suburb %><br>
+    <%= f.text_area :suburb %>
+</div>
+<div class="field">
+    <%= f.label :concerns %><br>
+    <%= f.text_area :concerns %>
+</div>
+<div class="field">
+    <%= f.label :image %><br>
+    <%= cl_image_upload_tag :image, :required => true %>
+</div>
+<div class="actions">
+    <%= f.submit %>
+</div>
+<% end %>

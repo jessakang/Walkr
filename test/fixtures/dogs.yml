@@ -1,0 +1,33 @@
+# == Schema Information
+#
+# Table name: dogs
+#
+#  id         :integer          not null, primary key
+#  name       :text
+#  breed      :text
+#  weight     :text
+#  suburb     :text
+#  concerns   :text
+#  image      :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  owner_id   :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  breed: MyText
+  weight: MyText
+  suburb: MyText
+  concerns: MyText
+  image: MyText
+
+two:
+  name: MyText
+  breed: MyText
+  weight: MyText
+  suburb: MyText
+  concerns: MyText
+  image: MyText

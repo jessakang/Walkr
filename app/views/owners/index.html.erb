@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h2>Dog Owners</h2>
+
+
+  <body>
+    <div class="owners">
+    <% @owners.each do |owner| %>
+      <tr>
+        <h3><%= owner.name %></h3>
+        <%= image_tag owner.image, :class => 'feature' %>
+        <p>
+        <td>Email: <%= owner.email %></td>
+        <p>
+      </tr>
+    <% end %>
+  </div>
+  </body>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<div class="comments">
+    <p>
+        <strong>Owner:</strong>
+        <%= @comment.owner.name %>
+    </p>
+    <p>
+        <strong>Message:</strong>
+        <%= @comment.message %>
+    </p>
+
+    <p>
+        <strong>Walker:</strong>
+        <%= @comment.walker.name %>
+    </p>
+
+    <%= link_to 'Back', walkers_path %>
+</div>
