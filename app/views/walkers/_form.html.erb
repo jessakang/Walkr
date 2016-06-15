@@ -12,41 +12,50 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
+  <p>
   <div class="field">
-    <%= f.label :email %><br>
+    <%= f.label :email %>
     <%= f.email_field :email %>
   </div>
+  <p>
   <div class="field">
-    <%= f.label :experience %><br>
+    <%= f.label :experience %>
     <%= f.text_field :experience %>
   </div>
+  <p>
   <div class="field">
-    <%= f.label :suburbs %><br>
+    <%= f.label :suburbs %>
     <%= f.text_area :suburbs %>
   </div>
+  <p>
   <div class="field">
-    <%= f.label :car %><br>
+    <%= f.label :car %>
     <%= f.check_box :car %>
   </div>
+  <p>
   <div class="field">
-    <%= f.label :wage %><br>
+    <%= f.label :wage %>
     <%= f.number_field :wage %>
   </div>
+  <p>
   <div class="field">
-    <%= f.label :image %><br>
+    <%= f.label :image %>
     <%= cl_image_upload_tag :image %>
   </div>
+  <p>
   <div class="field">
     <%= f.label :password  %>
     <%= f.password_field :password, :required => true %>
   </div>
+  <p>
   <div class="field">
     <%= f.label :password_confirmation  %>
     <%= f.password_field :password_confirmation, :required => true %>
   </div>
+  </p>
   <div class="actions">
     <%= f.submit %>
   </div>

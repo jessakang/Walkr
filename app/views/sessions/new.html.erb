@@ -3,6 +3,7 @@
 
 <h2>LOGIN</h2>
 
+<div class="login">
 <% if session[:user_id] %>
   <p><%= session[:user_id] %></p>
 <% end %>
@@ -32,7 +33,7 @@
   </p>
 
   <%= submit_tag "Login" %>
-
+</div>
 <h3>New? Sign up!</h3>
   <div class="category">
   <p>

@@ -30,10 +30,10 @@ ul {
     top: 0;
     width: 100%;
     background-color: gainsboro;
-    opacity: 0.5;
+    opacity: 0.4;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 5px;
 }
 
 li {
@@ -52,6 +52,10 @@ li a {
 
 li a:hover {
   background-color: #767779;
+}
+
+.login {
+  text-align: center;
 }
 
 .category a {
@@ -99,7 +103,6 @@ li a:hover {
 .comments a:hover {
   color: red;
 }
-
 
 .navigation {
   text-align: left;

@@ -15,23 +15,29 @@
     <%= f.label :name %><br>
     <%= f.text_field :name, :required => true %>
   </div>
+  <p>
   <div class="field">
     <%= f.label :email %><br>
     <%= f.email_field :email %>
   </div>
+  <p>
   <div class="field">
     <%= f.label :image %><br>
     <%= cl_image_upload_tag :image, :required => true  %>
   </div>
+  <p>
   <div class="field">
     <%= f.label :password  %>
     <%= f.password_field :password, :required => true %>
   </div>
+  <p>
   <div class="field">
     <%= f.label :password_confirmation  %>
     <%= f.password_field :password_confirmation, :required => true %>
   </div>
+  <p>
   <div class="actions">
     <%= f.submit %>
   </div>
+  </p>
 <% end %>

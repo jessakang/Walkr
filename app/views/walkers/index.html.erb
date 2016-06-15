@@ -19,6 +19,10 @@
         <p>
         <td>Wage/hr: <%= walker.wage %></td>
         <p>
+        <td><strong>Comments: </strong>
+          <% walker.comments.each do |comment| %>
+          <p></p><%= link_to comment.message, comment %></td>
+          <% end %>
       </tr>
     <% end %>
   </div>
